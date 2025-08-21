@@ -3,9 +3,9 @@ SetFactory("OpenCASCADE");
 //+
 
 //+
-Circle(2) = {0, 0, 0, 100, Pi/4, Pi/2};
+Circle(2) = {0, 0, -0.5, 100+0.5, Pi/4, Pi/2};
 //+
-Circle(3) = {0, 0, 0, 99, Pi/4, Pi/2};
+Circle(3) = {0, 0, -0.5, 99+0.5, Pi/4, Pi/2};
 //+
 Line(4) = {4, 2};
 //+
