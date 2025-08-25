@@ -1,0 +1,12 @@
+
+fig = plt.figure()
+ax = fig.add_subplot(111, projection='3d')
+# Get the coordinates of the nodes for the first element
+coords = nodes[elements[0,:], :]
+ax.scatter(coords[:,0], coords[:,1], coords[:,2])
+
+# label each point with its index
+for i, (x, y, z) in enumerate(coords):
+    ax.text(x, y, z, str(i), fontsize=8)
+
+ax.set_xlabel('X'); ax.set_ylabel('Y'); ax.set_zlabel('Z')
